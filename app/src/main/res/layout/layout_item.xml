@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/hinh"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_sapa"
+            android:padding="10dp"
+            android:layout_weight="5"/>
+        <TextView
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_ten"
+            android:layout_marginTop="10dp"
+            android:text="Sapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hinh"/>
+        <TextView
+            android:id="@+id/tv_mota"
+            android:text="Khu du lich Sapa"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ten"
+            android:layout_toRightOf="@+id/hinh"/>
+        <TextView
+            android:id="@+id/tv_gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mota"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="6dp"
+            android:text="30$"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/img_remove"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/img_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/remove" />
+</RelativeLayout>
